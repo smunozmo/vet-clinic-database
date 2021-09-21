@@ -1,6 +1,6 @@
 /* Populate database with sample data. */
 
-INSERT INTO animals(
+INSERT INTO public.animals(
 	id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ( 2, 'Gabumon', '11-15-2018', 2, true, 8);
 
