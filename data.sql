@@ -4,7 +4,6 @@ INSERT INTO public.animals(
 	id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ( 2, 'Gabumon', '11-15-2018', 2, true, 8);
 
-
 INSERT INTO public.animals(
 	id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ( 1, 'Agumon', '02-03-2020', 0, true, 10.23);

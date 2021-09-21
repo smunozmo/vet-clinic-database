@@ -9,4 +9,3 @@ CREATE TABLE animals (
     weight_kg numeric,
     PRIMARY KEY (id)
 );
-
