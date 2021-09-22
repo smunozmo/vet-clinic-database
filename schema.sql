@@ -1,5 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
+-- Day 1
+
 CREATE TABLE animals (
     id integer NOT NULL,
     name text,
@@ -9,6 +11,8 @@ CREATE TABLE animals (
     weight_kg numeric,
     PRIMARY KEY (id)
 );
+
+-- Day 2 
 
 ALTER TABLE animals
     ADD COLUMN species text;
