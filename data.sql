@@ -43,3 +43,10 @@ VALUES (9, 'Boarmon', '06-07-2005', 7, 'true', 20.4);
 INSERT INTO animals (
     id, name , date_of_birth , escape_attempts , neutered , weight_kg)
 VALUES (10, 'Blossom', '10-13-1998', 3, 'true', 17);
+
+-- Day 3 
+
+INSERT INTO owners (full_name, age)
+VALUES ('Melody Pond', 77),
+       ('Dean Winchester', 14),
+       ('Jodie Whittaker', 38);
