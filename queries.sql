@@ -111,16 +111,16 @@ SELECT MAX(newcount.count),
        newcount.name
 FROM
   (SELECT COUNT(animals),
-          public.owners.full_name as name
-   FROM public.animals
-   JOIN public.owners ON public.animals.owner_id = public.owners.id
-   GROUP BY public.owners.full_name) AS newcount
+          owners.full_name as name
+   FROM animals
+   JOIN owners ON animals.owner_id = owners.id
+   GROUP BY owners.full_name) AS newcount
 GROUP BY newcount.name
 HAVING MAX(newcount.count) =
   (SELECT MAX(newcount.count)
    FROM
      (SELECT COUNT(animals),
-             public.owners.full_name as name
-      FROM public.animals
-      JOIN public.owners ON public.animals.owner_id = public.owners.id
-      GROUP BY public.owners.full_name) AS newcount);
+             owners.full_name as name
+      FROM animals
+      JOIN owners ON animals.owner_id = owners.id
+      GROUP BY owners.full_name) AS newcount);
