@@ -77,6 +77,7 @@ CREATE TABLE visits (
 
 -- Second Week
 -- Day 1
+
 ALTER TABLE visits RENAME date TO date_of_visit;
 
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
