@@ -74,3 +74,16 @@ CREATE TABLE visits (
     CONSTRAINT visits_fk_1 FOREIGN KEY (vet_id) REFERENCES vets(id) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT visits_fk FOREIGN KEY (animal_id) REFERENCES animals(id) ON DELETE CASCADE ON UPDATE CASCADE
 ); 
+
+-- Second Week
+-- Day 1
+
+ALTER TABLE visits RENAME date TO date_of_visit;
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX visits_animal_id_asc ON visits(animal_id ASC);
+
+CREATE INDEX visits_vet_id_asc ON visits(vet_id ASC);
+
+CREATE INDEX owners_email_asc ON owners(email ASC);
